@@ -50,7 +50,6 @@ public class VegetablesOptions {
 		 VegetablesOptions spinach = new VegetablesOptions(0.0017553, 0.01753, 0.00030133, 0.001691, 0.06178, 1.785, 14.4, 0.3482, true, 49, 5.90, 13, 0.5);
 		 VegetablesOptions tomato = new VegetablesOptions( 0.00002372, 0.0078, 0.0000045, 0.000155, 0.005962, 0.5, 10.1269,  0.135, false, 10, 421.37, 929, 2.0);
 
-)
 	}
 	
 }
