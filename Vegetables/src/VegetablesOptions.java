@@ -44,6 +44,7 @@ public class VegetablesOptions {
 		
 	}
 	public static void main(String[] args){
+		 VegetablesOptions beet = new VegetablesOptions(0, 0.00612, 0.00000034,0.004, 0.00272, 43, 0.05186,true, 55, 21.77, 60, 2.1);
 		
 	}
 	
