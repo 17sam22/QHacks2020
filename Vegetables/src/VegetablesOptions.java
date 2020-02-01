@@ -6,7 +6,6 @@ public class VegetablesOptions {
 	private double vitaminK;
 	private double iron;
 	private double calcium;
-	private double protien;
 	private double calories;
 	private double potassium;
 	
@@ -35,7 +34,6 @@ public class VegetablesOptions {
 		this.vitaminK = vitaminK;
 		this.iron = iron;
 		this.calcium = calcium;
-		this.protein = protein;
 		this.calories = calories;
 		this.potassium = potassium;
 		this.singleUse = singleUse;
