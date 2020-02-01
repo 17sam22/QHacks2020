@@ -43,5 +43,8 @@ public class VegetablesOptions {
 		this.footprint = footprint;
 		
 	}
+	public static void main(String[] args){
+		
+	}
 	
 }
