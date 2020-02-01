@@ -44,8 +44,13 @@ public class VegetablesOptions {
 		
 	}
 	public static void main(String[] args){
-		 VegetablesOptions beet = new VegetablesOptions(0, 0.00612, 0.00000034,0.004, 0.00272, 43, 0.05186,true, 55, 21.77, 60, 2.1);
-		
+		 VegetablesOptions beet = new VegetablesOptions(0.0, 0.00612,0.00000034,0.004,0.00272,1.6,43.0, 0.05186,true, 55, 21.77,  60.0,  2.1);
+		 VegetablesOptions carrots = new VegetablesOptions(0.000509, 0.0036, 0.000008052, 0.000183, 0.021013, 0.45, 20.00, 0.01952, true, 75, 21.05, 58, 0.4);
+		 VegetablesOptions kale = new VegetablesOptions(0.0017, 0.06955, 0.00138, 0.00342, 0.18724, 5.187, 76.44, 0.00062244, true, 65, 29.48, 65, 0.4);
+		 VegetablesOptions spinach = new VegetablesOptions(0.0017553, 0.01753, 0.00030133, 0.001691, 0.06178, 1.785, 14.4, 0.3482, true, 49, 5.90, 13, 0.5);
+		 VegetablesOptions tomato = new VegetablesOptions( 0.00002372, 0.0078, 0.0000045, 0.000155, 0.005962, 0.5, 10.1269,  0.135, false, 10, 421.37, 929, 2.0);
+
+)
 	}
 	
 }
