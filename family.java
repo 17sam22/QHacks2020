@@ -87,7 +87,6 @@ public class family {
 		}
 		
 		 public static double gardenSpace(int numVeg, Vegetable veg){
-			 System.out.println(veg.area); 
 		   double space = numVeg*veg.area;
 		   return space/100;
 		 }
@@ -95,9 +94,8 @@ public class family {
 		
 
 		public static double totalWater(int numVeg, Vegetable veg){
-			System.out.println(veg.dailyWater);
 		  double water = numVeg*veg.dailyWater;
-		  return water;
+		  return water/1000;
 		}
 
 	public static void main(String[] args) {
@@ -259,7 +257,15 @@ public class family {
 			
 		}
 		
-		System.out.printf("The daily needed intake of the family is:\n"+famOne.cals+" calories \n"+famOne.vitA+" Grams of vitamin A \n"+famOne.vitC+" Grams of vitamin C \n"+famOne.vitK+" Grams of vitamin K \n"+famOne.iron+" Grams of iron \n"+famOne.calci+" Grams of calcium\n"+famOne.prot+" Grams of protein\n"+famOne.potas+" Grams of potassium");
+		System.out.printf("The daily needed intake of the family is:\n"
+		+famOne.cals+" calories \n"
+				+famOne.vitA+" Grams of vitamin A \n"
+		+famOne.vitC+" Grams of vitamin C \n"
+				+famOne.vitK+" Grams of vitamin K \n"
+		+famOne.iron+" Grams of iron \n"
+				+famOne.calci+" Grams of calcium\n"
+		+famOne.prot+" Grams of protein\n"
+				+famOne.potas+" Grams of potassium");
 		Vegetable beet = new Vegetable("beet",0.0, 0.00612,0.00000034,0.004,0.00272,1.6,43.0, 0.05186,true, 55, 21.77,  60.0,  2.1);
 		Vegetable carrots = new Vegetable("carrots",0.000509, 0.0036, 0.000008052, 0.000183, 0.021013, 0.45, 20.00, 0.01952, true, 75, 21.05, 58, 0.4);
 		Vegetable kale = new Vegetable("kale",0.0017, 0.06955, 0.00138, 0.00342, 0.18724, 5.187, 76.44, 0.00062244, true, 65, 29.48, 65, 0.4);
@@ -297,11 +303,20 @@ public class family {
 		double gardenArea = gardenSpace(vegetableNum, chosenVeg); 
 		double waterVol = totalWater(vegetableNum, chosenVeg); 
 		
-		System.out.printf("\nThe total garden area you need for this vegetable for your family size is: "+gardenArea); 
+		System.out.printf("\nThe total garden area you need for this vegetable for your family size is: %1.3f", gardenArea); 
 		System.out.printf(" m^2 \n"); 
-		System.out.printf("The total water volume you need for this vegetable is: "+waterVol); 
-		System.out.printf(" ml per day \n"); 
+		System.out.printf("The total water volume you need for this vegetable is: %1.3f", waterVol); 
+		System.out.printf(" L per day \n"); 
+		System.out.println("The harvest time for this vegetable will be: "+chosenVeg.lifeCycle+" Days"); 
+		String oneTime;
+		if (chosenVeg.singleUse == false) {
+			oneTime = "can";
+		}
+		else {
+			oneTime = "can not";
+		}
+		System.out.println("Your "+chosenVeg.name + " "+ oneTime+" continue to produce yield after it has been harvested.");
 	}
 	
+	
 }
-
